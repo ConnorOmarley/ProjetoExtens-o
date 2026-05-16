@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #141414;
+    color: #fff;
+}
+
+/* LOGIN */
+
+.tela-login {
+    background-image: url('img/netflix.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
+.login-container {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    color: #E50914;
+    font-size: 3rem;
+    margin-top: 30px;
+}
+
+.login-box {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 40px;
+    margin-top: 100px;
+
+    width: 350px;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-box h2 {
+    margin-bottom: 10px;
+}
+
+.login-box input {
+    padding: 14px;
+    border-radius: none;
+    border-radius: 4px;
+    background: #333;
+    color: #fff;
+}
+
+.login-box button {
+    padding: 14px;
+    border: none;
+    border-radius: 4px;
+
+    background: #E50914;
+    color: #fff;
+
+    font-size: 1rem;
+    cursor: pointer;
+
+    transition: 0.3;
+}
+
+.login-box button:hover {
+    background: #f40612;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 50px;
+
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+
+    background: rgba(0, 0, 0, 0.7);
+}
+
+header input {
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+
+    width: 250px;
+}
+
+.banner {
+    height: 90vh;
+
+    background-image: url('https://wallpapercave.com/wp/wp4056410.jpg');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 50px;
+}
+
+.banner-content {
+    max-width: 500px;
+}
+
+.banner-content h2 {
+    font-size: 4rem;
+}
+
+.banner-content p {
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.banner-content button {
+    padding: 12px 30px;
+
+    border: none;
+    border-radius: 4px;
+
+    background: #E50914;
+    color: #fff;
+
+    cursor: pointer;
+}
+
+.movies {
+    padding: 30px 50px;
+}
+
+.movie-row {
+  display: flex;
+  gap: 15px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  scroll-behavior: smooth;
+
+  padding-bottom: 10px;
+}
+
+.movie-card img {
+    width: 200px;
+    border-radius: 8px;
+
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.movie-card img:hover {
+    transform: sccale(1.08);
+}
+
+.movie h2 {
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.movie-row::-webkit-scrollbar {
+    height: 8px;
+}
+
+.movie-row::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 10px;
+}
+
+.movie-card {
+  min-width: 200px;
+  transition: 0.3s;
+}
+
+.movie-card:hover {
+  transform: scale(1.08);
+  z-index: 5;
+}
+
+.movie-row::-webkit-scrollbar {
+  display: none;
+}
