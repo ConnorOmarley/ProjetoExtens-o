@@ -13,7 +13,7 @@ body {
 /* LOGIN */
 
 .tela-login {
-    background-image: url('img/netflix.jpg');
+    background-image: url('img/zgeTuV.jpg');
     background-size: cover;
     height: 100vh;
 }
@@ -53,7 +53,7 @@ body {
 
 .login-box input {
     padding: 14px;
-    border-radius: none;
+    border: none;
     border-radius: 4px;
     background: #333;
     color: #fff;
@@ -70,7 +70,7 @@ body {
     font-size: 1rem;
     cursor: pointer;
 
-    transition: 0.3;
+    transition: 0.3s;
 }
 
 .login-box button:hover {
@@ -112,11 +112,32 @@ header input {
     padding-left: 50px;
 }
 
+.banner-filmes {
+    height: 90vh;
+
+    background-image: url('https://wallpapercave.com/wp/wp1817978.jpg');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 50px;
+}
+
 .banner-content {
     max-width: 500px;
 }
 
+.banner-content-filme {
+    max-width: 500px;
+}
+
 .banner-content h2 {
+    font-size: 4rem;
+}
+
+.banner-content-filme h2 {
     font-size: 4rem;
 }
 
@@ -125,7 +146,24 @@ header input {
     line-height: 1.5;
 }
 
+.banner-content-filme p {
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
 .banner-content button {
+    padding: 12px 30px;
+
+    border: none;
+    border-radius: 4px;
+
+    background: #E50914;
+    color: #fff;
+
+    cursor: pointer;
+}
+
+.banner-content-filme button {
     padding: 12px 30px;
 
     border: none;
@@ -162,7 +200,7 @@ header input {
 }
 
 .movie-card img:hover {
-    transform: sccale(1.08);
+    transform: scale(1.08);
 }
 
 .movie h2 {
@@ -191,4 +229,139 @@ header input {
 
 .movie-row::-webkit-scrollbar {
   display: none;
+}
+
+.left-header{
+    display:flex;
+    align-items:center;
+    gap:40px;
+}
+
+.menu{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    font-size:1rem;
+
+    transition:0.3s;
+}
+
+.menu a:hover{
+    color:#E50914;
+}
+
+/* CONTAS */
+
+.tela-contas {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.tela-contas header {
+    position: static;
+    justify-content: center;
+}
+
+.perfis-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;        
+}
+
+.perfis-container h1 {
+    font-size: 2rem;
+}
+
+.perfis {
+    display: flex;
+    gap: 30px;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.perfil:hover {
+    color: #fff;
+}
+
+.perfil:hover .foto {
+    border: 3px solid #fff;
+    transform: scale(1.05);
+}
+
+.foto {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    border: 3px solid transparent;
+    transition: 0.3s;
+}
+
+.nome {
+    font-size: 1rem;
+    color: #aaa;
+    transition: 0.3s;
+}
+
+.perfil:hover .nome {
+    color: #fff;
+}
+
+.tela-contas main {          /* ← adicione isso */
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SÉRIES */
+
+.banner-series {
+    height: 90vh;
+
+    background-image: url('https://image.tmdb.org/t/p/w500/ggFHVNu6YYI5L9pCfOacjizRGt.jpg');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 50px;
+}
+
+.banner-content-serie {
+    max-width: 500px;
+}
+
+.banner-content-serie h2 {
+    font-size: 4rem;
+}
+
+.banner-content-serie p {
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.banner-content-serie button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    background: #E50914;
+    color: #fff;
+    cursor: pointer;
 }
